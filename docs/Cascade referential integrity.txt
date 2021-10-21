@@ -1,0 +1,16 @@
+Cascading Referencial Integrety
+
+Optios when setting up Cascading referential integrity constraints:
+
+If an attempt is made to delete or update a row with a key referenced by foreign keys in existing rows in 
+other tables: 
+
+1. No Action. This is is the default behaviour. An error will be raised and the DELETE or UPDATE
+is rolled back.
+
+2.Cascade.  All rows containing the those foreign keys are also deleted or updated.
+
+3. Set NULL. All rows containing those foreign keys are set to NULL.
+
+4. Set Default. All rows containing those foreign keys are set to default value.
+
