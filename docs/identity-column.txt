@@ -1,0 +1,19 @@
+learning objective:
+
+what is identity column
+creating an identity column
+supply explicit values for identity columns using IDENTITY_INSERT
+Reset identity value using DBCC CHECKIDENT command
+
+how do you know a column is not an identity column?
+go to the properties of that partiular column
+see identity = False.
+
+when a column is not an Identity Column , in sql server you need to supply a value for that.
+
+id is something usually users need not have to provide.
+
+> identity specification
+(is identity) - do you want this column to be an identity column?
+identity increment - by how much do you want to increment by any time you insert a new record?
+identity seed - where do you want it to start : default = 1
